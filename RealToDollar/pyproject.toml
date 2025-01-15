@@ -33,7 +33,7 @@ httpx = "^0.28.1"
 pytest-mock = "^3.14.0"
 
 [tool.ruff]
-line-length = 79
+line-length = 83
 extend-exclude = ['migrations']
 
 [tool.ruff.lint]

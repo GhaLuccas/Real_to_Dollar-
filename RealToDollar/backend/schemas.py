@@ -3,10 +3,11 @@ from decimal import Decimal
 from pydantic import BaseModel
 
 
-class RealRequest(BaseModel):
-    brl: Decimal
+class BRLCurencyRequest(BaseModel):
+    amount: Decimal
 
 
-class ConverterResponse(BaseModel):
-    brl: Decimal
-    usd: Decimal
+class USDConvertedResponse(BaseModel):
+    brl_amount: Decimal
+    usd_converted: Decimal
+    exchange_rate_message: str
