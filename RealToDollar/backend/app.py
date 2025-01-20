@@ -1,6 +1,10 @@
 from decimal import Decimal
 
-from fastapi import FastAPI, HTTPException, status
+from fastapi import (
+    FastAPI,
+    HTTPException,
+    status,
+)
 from schemas import BRLCurencyRequest, USDConvertedResponse
 from services.fetch_exchange import get_exchange_rate
 
