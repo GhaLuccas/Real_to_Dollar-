@@ -1,5 +1,4 @@
 from decimal import Decimal
-from unittest.mock import AsyncMock
 
 import pytest
 
@@ -22,7 +21,7 @@ async def test_get_exchange_rate(mocker):
     mock_get = mocker.patch(
         'backend.services.fetch_exchange.httpx.AsyncClient.get'
     )
-    mock_get.return_value.json = AsyncMock(return_value=MOCK_API_RESPONSE)
+    mock_get.return_value.json = mocker.Mock(return_value=MOCK_API_RESPONSE)
 
     exchange_rate = await get_exchange_rate()
 

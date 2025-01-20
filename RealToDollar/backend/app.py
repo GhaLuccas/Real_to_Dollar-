@@ -1,3 +1,5 @@
+# backend/app.y
+
 from decimal import Decimal
 
 from fastapi import (
@@ -5,10 +7,13 @@ from fastapi import (
     HTTPException,
     status,
 )
-from schemas import BRLCurencyRequest, USDConvertedResponse
-from services.fetch_exchange import get_exchange_rate
+
+from .schemas import BRLCurencyRequest, USDConvertedResponse
+from .services.corsconfig import add_cors_middleware
+from .services.fetch_exchange import get_exchange_rate
 
 app = FastAPI()
+add_cors_middleware(app)
 
 
 @app.get('/')
