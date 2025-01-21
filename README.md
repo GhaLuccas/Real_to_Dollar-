@@ -12,7 +12,7 @@ Welcome to my Currency Converter project! This repository focuses on building a 
 
 🔻 Features
 - Real-time currency conversion between BRL (Brazilian Real) and USD (US Dollar).
-- Lightweight design—no database required.
+- Lightweight design—no database required a Single-Page Application (SPA).
 
 ---
 
