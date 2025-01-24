@@ -1,6 +1,6 @@
 # Currency Converter 💱
 
-Welcome to my Currency Converter project! This repository focuses on building a simple yet efficient currency conversion application while practicing essential development tools and frameworks.
+Welcome to my Currency Converter project! This repository focuses on building a simple currency conversion application while practicing essential development tools and frameworks.
 
 ---
 
